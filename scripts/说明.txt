@@ -1,0 +1,10 @@
+1、直接将这2个文件夹复制到wampserver的www目录下覆盖
+2、然后在各自的目录下新建一个root.txt（UTF-8编码），写上你的git项目路径
+www
+    |-- cbm
+          |-- root.txt
+    |--soui\web\code
+          |-- root.txt
+
+比如：C:\Develop\GitProject\cbm\   
+注意：最后的斜杠不能少！！！

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIDEF>
+  <font face="微软雅黑" size="13"/>
+
+  <skin>
+    <imgframe name="_skin.bg" src="img:CBM_BG"/>
+    <imgframe name="_skin.logo" src="img:CBM_SKIN_LOGO"/>
+    <imglist name="_skin.btn.close" src="img:CBM_SYS_BTN_CLOSE" states="3" />
+    <imglist name="_skin.btn.min" src="img:CBM_SYS_BTN_MIN" states="3" />
+    <imglist name="_skin.btn.cad" src="img:CBM_SKIN_BTN_CAD" states="3" />
+    <imglist name="_skin.btn.cad.file" src="img:CBM_SKIN_BTN_CAD_FILE" states="3" />
+  </skin>
+
+<style>
+	<!--定义超链接样式-->
+	<class name="cls_btn_weblink" cursor="hand" colorText="#1e78d5" colorTextHover="#1e78d5" font="italic:1" fontHover="underline:1,italic:1" />
+</style>
+
+</UIDEF>

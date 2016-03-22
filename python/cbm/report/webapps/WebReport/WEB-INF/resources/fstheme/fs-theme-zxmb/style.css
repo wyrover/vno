@@ -1,0 +1,303 @@
+.node-navi{
+	position: relative;
+	float: right;
+	right: 30px;
+	list-style: none;
+	height: 65px;
+	top:7px;
+    overflow:hidden;
+}
+
+.node-navi li{
+	position: relative;
+	float: left;
+	left: 0;
+    margin-left:3px;
+    width:85px;
+	height: 65px;
+	display: block;
+	/*line-height: 65px;
+	font-size: 14px;
+	padding: 0 15px;*/
+	cursor: pointer;
+	color: #fff;
+}
+.lius{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/itbg.png') no-repeat center center !important;
+}
+.node-navi li:hover,.liss{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/itbgs.png') no-repeat center center !important;
+}
+.tb{
+    float:left;
+    margin-top:9px;
+    width:85px;
+    height:26px;
+}
+.nr{
+    float:left;
+    width:85px;
+    height:30px;
+    line-height:30px;
+    text-align:center;
+    font-size:14px;
+}
+.node-navi li:hover .nr,.liss .nr{
+    color:#1988e2;
+}
+.node-navi li[xt="0"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt0.png') no-repeat center center !important;
+}
+.node-navi li[xt="1"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt1.png') no-repeat center center !important;
+}
+.node-navi li[xt="2"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt2.png') no-repeat center center !important;
+}
+.node-navi li[xt="3"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt3.png') no-repeat center center !important;
+}
+.node-navi li[xt="4"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt4.png') no-repeat center center !important;
+}
+.node-navi li[xt="5"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt5.png') no-repeat center center !important;
+}
+.node-navi li[xt="6"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt6.png') no-repeat center center !important;
+}
+.node-navi li[xt="7"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt7.png') no-repeat center center !important;
+}
+.node-navi li[xt="8"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xt8.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="0"]:hover .tb,li.liss[xt="0"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts0.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="1"]:hover .tb,li.liss[xt="1"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts1.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="2"]:hover .tb,li.liss[xt="2"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts2.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="3"]:hover .tb,li.liss[xt="3"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts3.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="4"]:hover .tb,li.liss[xt="4"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts4.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="5"]:hover .tb,li.liss[xt="5"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts5.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="6"]:hover .tb,li.liss[xt="6"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts6.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="7"]:hover .tb,li.liss[xt="7"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts7.png') no-repeat center center !important;
+}
+.node-navi li.lius[xt="8"]:hover .tb,li.liss[xt="8"] .tb{
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xts8.png') no-repeat center center !important;
+}
+.node-navi li:hover{
+	color: #b3b9c4;
+}
+
+.node-pane{
+	position: absolute;
+	top: 60px;
+	left: 0;
+	-webkit-border-radius: 0 0 3px 3px;
+	-moz-border-radius: 0 0 3px 3px;
+	z-Index: 10000;
+}
+.node-pane-inner{
+	position: relative;
+	_height: 200px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: #78839d;
+	background: rgba(124, 124, 189, 0.85);
+	*width:200px;
+}
+.node-select{
+	background: #295a94;
+}
+
+.node-pane a, .node-title{
+	position: relative;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+	min-width: 160px;
+	_width:180px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: white;
+	padding: 3px 5px 3px 12px;
+	cursor: pointer;
+}
+
+.node-pane a:hover{
+	background: #78839d;
+}
+.node-title{
+	padding: 5px 5px 5px 4px;
+	cursor: default;
+	color: #b3b9c4;
+	font-weight: bold;
+}
+
+.fui-bsb{
+  background-color: #eef5fb !important;
+}
+.fui-bsc{
+  color: #aaa0d2 !important;
+}
+.fui-bsd{
+  border-color: #aaa0d2 !important;
+}
+.fui-fhc{
+  color: #aaa0d2 !important;
+}
+.fui-fht{
+  text-shadow: none;/*0 0 3px #aaa0d2 !important;*/
+}
+.fui-seb{
+    background:none;
+    /*background:url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/bar_bg.png') #eef5fb repeat !important;*/
+}
+.fs-tab-names{
+    background:url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/bar_bg.png') #eef5fb repeat !important;
+}
+.fui-fbc{
+  color: #6a6a6a !important;
+}
+.fui-fbt{
+  text-shadow: white !important;
+}
+
+body{
+	background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/bg.png') repeat !important;
+}
+.fs-frame-scroll{
+ background-color: #e4e8eb !important;
+}
+.fs-navibar-item li{
+color:#ffffff;
+}
+.pltbg{
+float:left;
+width:230px;
+height:30px;
+background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/tbg.png') repeat !important;
+}
+.nav-btn,.fs-tab .nav-btn{
+  background-color: #eef5fb !important;
+  margin-right:1px;
+}
+.fs-tab-item{
+margin-right:1px;
+}
+.fs-tab-item:hover,.select,.fs-tab-homepage.nav-btn.select{
+background-color: #ffffff !important;
+}
+.ptb{
+float:left;
+}
+.ul-tree{
+    float:left;
+    width:230px;
+}
+.liyi{
+    float:left;
+    width:230px;
+    height:30px;
+    background:url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/tbg.png') repeat-x !important;
+}
+.liyi .tb{
+    float:left;
+    margin:5px 10px 2px 30px;
+    width:20px;
+    height:20px;
+}
+.liyi .nr{
+    float:left;
+    width:120px;
+    height:30px;
+    line-height:30px;
+    text-align:left;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+	white-space: nowrap;
+    word-break: keep-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.liyi .yc{
+    float:left;
+    margin-top:2px;
+    width:36px;
+    height:26px;
+    cursor:pointer;
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/yc.png') no-repeat center center !important;
+}
+.fs-menu-item,.fs-menu-item:hover,.fs-menu-item.select{
+    height:30px;
+    line-height:30px;
+    font-size:14px;
+    border-bottom:1px solid #fff;
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/tbg.png') repeat;
+    color:#fff;
+}
+.menutree-child{
+    height:28px;
+    line-height:28px;
+    font-size:14px;
+    color:#6a6a6a !important;
+    background:none;
+}
+.menutree-child.select{
+    text-shadow:none;
+    color:#6a6a6a !important;
+    background-color:#fff !important;
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/tbg1.png') repeat;
+}
+.limg{
+    float:left;
+    width:20px;
+    height:20px;
+}
+.syc{
+    position: absolute;
+    cursor:pointer;
+    top:2px;
+    right:10px;
+    width:36px;
+    height:26px;
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/yc.png') no-repeat;
+}
+.sxs{
+    position:absolute;
+    cursor:pointer;
+    display:none;
+    top:67px;
+    left:-20px;
+    width:21px;
+    height:26px;
+    background: url('${servletURL}?op=resource&resource=/fstheme/fs-theme-zxmb/xs.png') no-repeat;
+}
+.fs-banner-logo{
+    height:50px;
+}
+
+.fui-bsb.select{
+  background-color: #fff !important;
+}
+.fs-banner-title{
+color:#fff;
+line-height:50px;
+}

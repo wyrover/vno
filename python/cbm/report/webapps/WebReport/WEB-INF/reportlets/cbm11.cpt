@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20141222" releaseVersion="8.0.0">
+<TableDataMap>
+<TableData name="ds1" class="com.fr.data.impl.DBTableData">
+<Parameters>
+<Parameter>
+<Attributes name="design_id"/>
+<O t="I">
+<![CDATA[0]]></O>
+</Parameter>
+</Parameters>
+<Attributes maxMemRowCount="-1"/>
+<Connection class="com.fr.data.impl.NameDatabaseConnection">
+<DatabaseName>
+<![CDATA[cbm]]></DatabaseName>
+</Connection>
+<Query>
+<![CDATA[select * from design_pore join design_site on design_site.id=design_pore.design_site_id join design_technology on design_technology.id=design_site.design_technology_id where design_technology.id=${design_id}]]></Query>
+</TableData>
+</TableDataMap>
+<ReportFitAttr fitHorizontalInApp="1" fitVerticalInApp="0"/>
+<Report class="com.fr.report.worksheet.WorkSheet" name="sheet1">
+<ReportPageAttr>
+<HR F="13" T="13"/>
+<FR/>
+<HC/>
+<FC/>
+</ReportPageAttr>
+<ColumnPrivilegeControl/>
+<RowPrivilegeControl/>
+<RowHeight defaultValue="723900">
+<![CDATA[2304000,1728000,1440000,1440000,1440000,1440000,1440000,1728000,1440000,1728000,1440000,1440000,1728000,1440000,1440000,723900]]></RowHeight>
+<ColumnWidth defaultValue="2743200">
+<![CDATA[5524500,0,6098117,5336117,7126817,1752600,2743200,2743200,2743200,2743200,2743200]]></ColumnWidth>
+<CellElementList>
+<C c="0" r="0" cs="6" s="0">
+<O>
+<![CDATA[“底板岩巷密集穿层钻孔抽采煤巷条带瓦斯抽采技术”设计报表]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="0" r="1" cs="6" s="1">
+<O>
+<![CDATA[一、抽采技术设计参数]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="2" s="2">
+<O>
+<![CDATA[抽采技术：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="2" s="3">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="2" cs="4" s="3">
+<O>
+<![CDATA[底板岩巷密集穿层钻孔抽采煤巷条带瓦斯抽采技术]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="3" s="4">
+<O>
+<![CDATA[设计煤矿：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="3" s="5">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="3" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$mine_name]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="3" s="4">
+<O>
+<![CDATA[设计工作面：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="4" r="3" cs="2" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$face_name]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="4" s="4">
+<O>
+<![CDATA[底板岩巷距离煤层：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="4" s="5">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="4" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$w_dis + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="4" s="4">
+<O>
+<![CDATA[巷内错距：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="4" r="4" cs="2" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$h_offset + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="5" s="4">
+<O>
+<![CDATA[钻场间距：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="5" s="5">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="5" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$site_gap + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="5" s="6">
+<O>
+<![CDATA[钻孔间距：]]></O>
+<PrivilegeControl/>
+</C>
+<C c="4" r="5" cs="2" s="7">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$pore_gap + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+</C>
+<C c="0" r="6" s="4">
+<O>
+<![CDATA[钻孔孔径：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="6" cs="2" s="8">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$pore_diameter + " mm"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="6" s="9">
+<O>
+<![CDATA[封孔长度：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="4" r="6" cs="2" s="10">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$close_length + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="7" cs="6" s="1">
+<O>
+<![CDATA[二、钻孔设计参数]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="8" cs="6" s="11">
+<O>
+<![CDATA[根据上述参数设计钻孔，钻孔参数见附表A。]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="9" cs="6" s="1">
+<O>
+<![CDATA[三、钻孔工程施工统计]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="10" s="4">
+<O>
+<![CDATA[设计煤矿：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="10" s="5">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="10" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$mine_name]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="10" s="4">
+<O>
+<![CDATA[设计工作面：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="4" r="10" cs="2" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$face_name]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="11" s="4">
+<O>
+<![CDATA[施工穿层钻孔个数：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="11" s="5">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="2" r="11" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$pore_num + " 个"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="3" r="11" s="4">
+<O>
+<![CDATA[钻孔总工程量：]]></O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="4" r="11" cs="2" s="5">
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=$pore_sum + " m"]]></Attributes>
+</O>
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="0" r="12" cs="6" s="12">
+<O>
+<![CDATA[四、附表A 钻孔设计参数表]]></O>
+<PrivilegeControl/>
+<Expand leftParentDefault="false" upParentDefault="false"/>
+</C>
+<C c="0" r="13" cs="2" s="13">
+<O>
+<![CDATA[钻孔编号]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="2" r="13" s="13">
+<O>
+<![CDATA[钻孔长度(m)]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="3" r="13" s="13">
+<O>
+<![CDATA[钻孔方位角(°)]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="4" r="13" cs="2" s="13">
+<O>
+<![CDATA[钻孔倾角(°)]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="0" r="14" cs="2" s="14">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="name"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="2" r="14" s="14">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="length"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="3" r="14" s="14">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="angle1"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="4" r="14" cs="2" s="14">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="angle2"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+</CellElementList>
+<ReportAttrSet>
+<ReportSettings shrinkToFitMode="0" headerHeight="0" footerHeight="0">
+<PaperSetting>
+<PaperSize width="32918400" height="40233600"/>
+<Margin top="576000" left="720000" bottom="288000" right="576000"/>
+</PaperSetting>
+</ReportSettings>
+<Header reportPageType="0">
+<Background name="NullBackground"/>
+<LeftList/>
+<CenterList/>
+<RightList/>
+</Header>
+<Footer reportPageType="0">
+<Background name="NullBackground"/>
+<LeftList/>
+<CenterList/>
+<RightList/>
+</Footer>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<ReportParameterAttr>
+<Attributes showWindow="true" delayPlaying="true" windowPosition="1" align="0"/>
+<PWTitle>
+<![CDATA[参数]]></PWTitle>
+<Parameter>
+<Attributes name="mine_name"/>
+<O>
+<![CDATA[]]></O>
+</Parameter>
+<Parameter>
+<Attributes name="face_name"/>
+<O>
+<![CDATA[]]></O>
+</Parameter>
+</ReportParameterAttr>
+<StyleList>
+<Style horizontal_alignment="0" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="144"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="112" foreground="-16764058"/>
+<Background name="ColorBackground" color="-3342337"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="4" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="2" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="2" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style horizontal_alignment="4" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style horizontal_alignment="4" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style horizontal_alignment="4" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="2" color="-3342337"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="2" color="-3342337"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="112" foreground="-16764058"/>
+<Background name="ColorBackground" color="-3342337"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88" foreground="-16777088"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="72"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1" color="-3342337"/>
+<Bottom style="1" color="-3342337"/>
+</Border>
+</Style>
+</StyleList>
+<DesignerVersion DesignerVersion="IAA"/>
+<PreviewType PreviewType="0"/>
+</WorkBook>

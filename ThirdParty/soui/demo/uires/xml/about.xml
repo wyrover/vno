@@ -1,0 +1,6 @@
+﻿<include>
+    <text pos="10,8">户名：</text>
+    <text colorText="#000000">黄建雄</text>
+    <text pos="10,[5">支付宝帐号：</text>
+    <edit  colorText="#ff0000" readOnly="1">setoutsoft@qq.com</edit>
+</include>

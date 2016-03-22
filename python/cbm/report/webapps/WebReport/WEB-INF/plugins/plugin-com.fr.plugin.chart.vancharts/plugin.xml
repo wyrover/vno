@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.chart.vancharts</id>
+    <name><![CDATA[图表(新特性)]]></name>
+    <active>yes</active>
+    <version>2.0</version>
+    <env-version>8.0</env-version>
+    <vendor>finereport.eason.shine</vendor>
+    <description><![CDATA[饼图、柱形图、条形图]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+        <LocaleFinder class="com.fr.plugin.chart.locale.VanChartLocaleFinder"/>
+        <JavaScriptFileHandler class="com.fr.plugin.chart.VanChartsBaseJavaScript"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer>
+    </extra-designer>
+
+    <extra-chart>
+        <IndependentChartProvider class="com.fr.plugin.chart.pie.PieIndependentVanChart" plotID="VanChartPiePlot"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.column.ColumnIndependentVanChart" plotID="VanChartColumnPlot"/>
+        <IndependentChartProvider class="com.fr.plugin.chart.bar.BarIndependentVanChart" plotID="VanChartBarPlot"/>
+    </extra-chart>
+
+    <extra-chart-designer>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.pie.PieIndependentVanChartInterface" plotID="VanChartPiePlot"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.column.ColumnIndependentVanChartInterface" plotID="VanChartColumnPlot"/>
+        <IndependentChartUIProvider class="com.fr.plugin.chart.bar.BarIndependentVanChartInterface" plotID="VanChartBarPlot"/>
+    </extra-chart-designer>
+</plugin>

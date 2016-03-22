@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.functionrecorder</id>
+    <name><![CDATA[功能点记录]]></name>
+    <active>yes</active>
+    <hidden>no</hidden>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-08-09</jartime>
+    <vendor>finereport.neil</vendor>
+    <description><![CDATA[记录各个功能点使用频率, 并存入logdb中。具体请查看：http://bbs.finereport.com/thread-69133-1-2.html]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+        <FunctionProcessor class="com.fr.plugin.record.FunctionRecorderManager"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer/>
+</plugin>

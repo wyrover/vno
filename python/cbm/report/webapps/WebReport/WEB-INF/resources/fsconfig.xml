@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fsconfig xmlVersion="20141222" releaseVersion="8.0.0" useFS="true" mobileDeviceBinding="false">
+<systemManagerFavoriteAndADHOCReport>
+<sysFavorite>
+<Parameters/>
+<DSName>
+<![CDATA[]]></DSName>
+<ColumnNames>
+<![CDATA[id,,.,,type,,.,,entryid]]></ColumnNames>
+<ColumnTypes>
+<![CDATA[java.lang.String,java.lang.Integer,java.lang.String]]></ColumnTypes>
+<RowData>
+<![CDATA[2:'AR`%VTed;sao-G@Cs2`;G(\Ik(q/GhPY\qJrDj8Ems6GrC!X5f=]ARpMk5)cngC<^mJ+1]A
+s$@U2i1BFeLQ<.e0[+f?pK&3ME-[kFcK0'ILun?L3UU/!$,=GUBuI-K+hged;$P~
+]]></RowData>
+</sysFavorite>
+</systemManagerFavoriteAndADHOCReport>
+<AuthenticateObjectType class="com.fr.fs.auth.DefaultAuthenticateObjectType"/>
+<SystemAttr homePageURL="ReportServer?reportlet=demo/analytics/product.cpt" loginTitle="数据决策系统" isLoginPageImg="false" isBackgroundImg="true" backgroundColor="0" customBackgroundColor="rgb(38,77,132)" bannerType="2"/>
+<AuthorizeAttr gradeAuthority="false" editReportAuthority="false" dataConnectionAuthority="false"/>
+<UerDataControl type="0"/>
+<fstheme name="default"/>
+<SystemStyle colorScheme="0" customColors="rgb(212,63,58);rgb(55,189,100);rgb(20,131,255);rgb(0,0,0)">
+<folderIcon id="1" icon="e62f"/>
+<folderIcon id="2" icon="e630"/>
+<folderIcon id="35" icon="e632"/>
+<folderIcon id="3" icon="e644"/>
+<folderIcon id="4" icon="e642"/>
+<folderIcon id="5" icon="e64a"/>
+<folderIcon id="31" icon="e638"/>
+</SystemStyle>
+</fsconfig>

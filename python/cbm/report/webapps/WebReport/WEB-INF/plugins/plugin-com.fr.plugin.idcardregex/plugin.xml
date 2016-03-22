@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.idcardregex</id>
+    <name><![CDATA[文本控件身份证校验增强插件]]></name>
+    <active>no</active>
+    <hidden>no</hidden>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-08-09</jartime>
+    <vendor>finereport.neil</vendor>
+    <description><![CDATA[安装后, 文本控件中的身份证校验将加入更健全的校验机制]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+		<CustomRegProvider class="com.fr.plugin.idcardregex.CustomIDCardReg"/>
+    </extra-core>
+    <extra-report>
+        <JavaScriptFileHandler class="com.fr.plugin.idcardregex.JavaScriptFile"/>
+	</extra-report>
+    <extra-designer>
+    </extra-designer>
+</plugin>

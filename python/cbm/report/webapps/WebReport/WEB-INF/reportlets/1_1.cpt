@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WorkBook xmlVersion="20141222" releaseVersion="8.0.0">
+<TableDataMap>
+<TableData name="ds1" class="com.fr.data.impl.DBTableData">
+<Parameters>
+<Parameter>
+<Attributes name="abc"/>
+<O t="I">
+<![CDATA[0]]></O>
+</Parameter>
+</Parameters>
+<Attributes maxMemRowCount="-1"/>
+<Connection class="com.fr.data.impl.NameDatabaseConnection">
+<DatabaseName>
+<![CDATA[cbm_asset]]></DatabaseName>
+</Connection>
+<Query>
+<![CDATA[select * from pore_gas_content where id>${abc}]]></Query>
+</TableData>
+</TableDataMap>
+<ReportWebAttr>
+<ServerPrinter/>
+</ReportWebAttr>
+<ReportFitAttr fitInBrowser="true" fitHorizontalInApp="0" fitVerticalInApp="0"/>
+<Report class="com.fr.report.worksheet.WorkSheet" name="sheet1">
+<ReportPageAttr>
+<HR F="0" T="2"/>
+<FR/>
+<HC/>
+<FC/>
+</ReportPageAttr>
+<ColumnPrivilegeControl/>
+<RowPrivilegeControl/>
+<RowHeight defaultValue="723900">
+<![CDATA[1752600,1143000,1371600,723900,723900,723900,723900,723900,723900,723900,723900]]></RowHeight>
+<ColumnWidth defaultValue="2743200">
+<![CDATA[647700,1562100,2400300,2514600,2819400,2552700,2362200,3048000,2628900,2476500,1981200,2286000,2362200,2552700,2743200]]></ColumnWidth>
+<CellElementList>
+<C c="0" r="0">
+<PrivilegeControl/>
+<Expand/>
+</C>
+<C c="1" r="0" cs="13" s="0">
+<O>
+<![CDATA[淮河南矿区钻孔瓦斯含量统计表]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="1" r="1" rs="2" s="1">
+<O>
+<![CDATA[序号]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="2" r="1" rs="2" s="1">
+<O>
+<![CDATA[煤矿]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="3" r="1" rs="2" s="1">
+<O>
+<![CDATA[孔号]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="4" r="1" rs="2" s="1">
+<O>
+<![CDATA[样品深度/m]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="5" r="1" rs="2" s="1">
+<O>
+<![CDATA[煤层]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="6" r="1" rs="2" s="1">
+<O>
+<![CDATA[煤厚/m]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="7" r="1" rs="2" s="1">
+<O>
+<![CDATA[直接顶板岩性]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="8" r="1" rs="2" s="1">
+<O>
+<![CDATA[煤类]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="9" r="1" cs="3" s="1">
+<O>
+<![CDATA[瓦斯成分/%]]></O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="12" r="1" cs="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="2">
+<text>
+<![CDATA[含量(可燃质)/(mL/g)]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="9" r="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="3">
+<text>
+<![CDATA[N]]></text>
+</RichChar>
+<RichChar styleIndex="4">
+<text>
+<![CDATA[2]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="10" r="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="3">
+<text>
+<![CDATA[CO]]></text>
+</RichChar>
+<RichChar styleIndex="4">
+<text>
+<![CDATA[2]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="11" r="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="5">
+<text>
+<![CDATA[CH]]></text>
+</RichChar>
+<RichChar styleIndex="6">
+<text>
+<![CDATA[4]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="12" r="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="3">
+<text>
+<![CDATA[CO]]></text>
+</RichChar>
+<RichChar styleIndex="4">
+<text>
+<![CDATA[2]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="13" r="2" s="1">
+<O t="RichText">
+<RichText>
+<RichChar styleIndex="5">
+<text>
+<![CDATA[CH]]></text>
+</RichChar>
+<RichChar styleIndex="6">
+<text>
+<![CDATA[4]]></text>
+</RichChar>
+</RichText>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2" showAsHTML="true"/>
+<CellPageAttr/>
+<Expand/>
+</C>
+<C c="1" r="3" s="7">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="id"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="2" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="煤矿"/>
+<Condition class="com.fr.data.condition.ListCondition"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Result>
+<![CDATA[$$$]]></Result>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="3" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="孔号"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="4" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="样品深度"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="5" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="煤层"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="6" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="煤厚"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="7" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="直接顶板岩性"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="8" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="煤类"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="9" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="gas_n2"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="10" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="gas_co2"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="11" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="gas_ch4"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="12" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="content_co2"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+<C c="13" r="3" s="8">
+<O t="DSColumn">
+<Attributes dsName="ds1" columnName="content_ch4"/>
+<Complex/>
+<RG class="com.fr.report.cell.cellattr.core.group.FunctionGrouper"/>
+<Parameters/>
+</O>
+<PrivilegeControl/>
+<CellGUIAttr adjustmode="2"/>
+<CellPageAttr/>
+<Expand dir="0"/>
+</C>
+</CellElementList>
+<ReportAttrSet>
+<ReportSettings headerHeight="0" footerHeight="0">
+<PaperSetting orientation="1">
+<PaperSize width="32918400" height="40233600"/>
+<Margin top="576000" left="720000" bottom="288000" right="576000"/>
+</PaperSetting>
+<Background name="ColorBackground"/>
+</ReportSettings>
+<Header reportPageType="0">
+<Background name="NullBackground"/>
+<LeftList/>
+<CenterList/>
+<RightList/>
+</Header>
+<Footer reportPageType="0">
+<Background name="NullBackground"/>
+<LeftList/>
+<CenterList/>
+<RightList/>
+</Footer>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<Report class="com.fr.report.poly.PolyWorkSheet" name="sheet2">
+<ReportAttrSet>
+<ReportSettings headerHeight="0" footerHeight="0">
+<PaperSetting/>
+</ReportSettings>
+</ReportAttrSet>
+<PrivilegeControl/>
+</Report>
+<ReportParameterAttr>
+<Attributes showWindow="true" delayPlaying="true" windowPosition="1" align="0"/>
+<PWTitle>
+<![CDATA[参数]]></PWTitle>
+<Parameter>
+<Attributes name="a"/>
+<O>
+<![CDATA[谢一矿]]></O>
+</Parameter>
+</ReportParameterAttr>
+<StyleList>
+<Style horizontal_alignment="0" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="144"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
+</Border>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="88"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
+</Border>
+</Style>
+<Style imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="120"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style imageLayout="1">
+<FRFont name="宋体" style="0" size="104"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style imageLayout="1">
+<FRFont name="宋体" style="0" size="104" isSubscript="true"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style imageLayout="1">
+<FRFont name="宋体" style="0" size="96"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style imageLayout="1">
+<FRFont name="宋体" style="0" size="96" isSubscript="true"/>
+<Background name="NullBackground"/>
+<Border/>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<Format class="com.fr.base.CoreDecimalFormat">
+<![CDATA[#0]]></Format>
+<FRFont name="微软雅黑" style="0" size="72"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
+</Border>
+</Style>
+<Style horizontal_alignment="2" imageLayout="1">
+<FRFont name="微软雅黑" style="0" size="72"/>
+<Background name="NullBackground"/>
+<Border>
+<Top style="1"/>
+<Bottom style="1"/>
+<Left style="1"/>
+<Right style="1"/>
+</Border>
+</Style>
+</StyleList>
+<DesignerVersion DesignerVersion="IAA"/>
+<PreviewType PreviewType="0"/>
+</WorkBook>

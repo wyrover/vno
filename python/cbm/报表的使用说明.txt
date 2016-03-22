@@ -1,0 +1,12 @@
+-->tomcat服务器安装
+1、安装jdk1.7以上，并设置JAVA_HOME环境变量
+2、确保report目录下（该目录名是有apache-tomcat改名改过来的）有bin文件夹，包含启动tomcat的一系列脚本和exe程序
+3、注册tomcat服务（命令行切换到bin目录下，执行命令:  service.bat install）
+注册完事后，为了方便使用，可将bin/tomcat.exe做一个快捷方式发送到桌面
+4、运行tomcat.exe，启动tomcat服务器
+
+-->报表模板及数据库
+1、命令行切换到tables目录
+2、执行CreateSQL.py脚本，生成sql脚本文件
+3、通过phpmyadmin新建cbm_asset数据库（必须是utf8 general ci编码）
+4、将sql脚本导入到cbm_asset数据库中（或者将sql语句拷贝到sql编辑框执行）

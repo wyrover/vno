@@ -1,0 +1,9 @@
+底板岩巷密集穿层钻孔抽采煤巷条带瓦斯抽采技术
+矿名			mine_name
+工作面名		face_name
+底板岩巷距离煤层	w_dis
+内错巷道名		tunnel_name
+水平投影距离		h_offset
+钻场间距		site_gap
+钻孔孔径		pore_diameter
+钻孔长度		pore_lenth

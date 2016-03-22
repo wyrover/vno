@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOUI width="830" height="530" bigIcon="ICON_CBM_SOUI:32" maxInset="5,3,10,10" smallIcon="ICON_CBM_SOUI:16" margin="5,3,5,7" appWnd="1" translucent="0" resizable="0" >
+  <root skin="_skin.bg">
+    <caption pos="0,0,-0,30" name="caption7" font="adding:4" skin="_skin.logo">
+      <text pos="11,4" name="wnd_title" >井下煤层气规模化抽采计算机辅助设计（CAD）系统</text>
+      <imgbtn name="btn_close" pos="-30,0" skin="_skin.btn.close" tip="关闭" animate="1"/>
+      <imgbtn name="btn_min" pos="-60,0" skin="_skin.btn.min" tip="最小化" animate="1"/>
+    </caption>
+    <window pos="-200,-70,-0,-0">
+      <imgbtn pos="3,3" name="cad" skin="_skin.btn.cad" tip="启动CAD" animate="1" />
+      <imgbtn pos="100,3" name="cadfile" skin="_skin.btn.cad.file" tip="打开CAD文件" animate="1" />
+    </window>
+  </root>
+</SOUI>

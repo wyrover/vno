@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+	 <id>com.fr.plugin.mdnl</id>
+    <name><![CDATA[多维数据集]]></name>
+    <active>yes</active>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+	 <jartime>2015-08-09</jartime>
+    <vendor>finereport</vendor>
+    <description><![CDATA[多维数据集插件，包含常用的多维数据库和FineCube]]></description>
+    <change-notes><![CDATA[将多维数据集从主干代码剥离，作为一个插件单独维护，可以得到及时的版本更新.]]></change-notes>
+    <extra-core>
+    </extra-core>
+    <extra-report>
+    </extra-report>
+    <extra-designer>
+        <TableDataDefineProvider class="com.fr.design.plugin.mdnl.XMLATableDataDefineImpl"/>
+        <ServerTableDataDefineProvider class="com.fr.design.plugin.mdnl.ServerXMLATableDataDefineImpl"/>
+        <ConnectionProvider class="com.fr.design.plugin.mdnl.XMLAConnectionImpl"/>
+        <ConnectionProvider class="com.fr.design.plugin.mdnl.FineCubeConnectionImpl"/>
+    </extra-designer>
+</plugin>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.lookandfeel.old</id>
+    <name><![CDATA[控件以711版本的外观展示]]></name>
+    <active>no</active>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-08-09</jartime>
+    <vendor>finereport</vendor>
+    <description><![CDATA[不使用新版本的扁平化样式而使用老的控件演示]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+        <WidgetSwitcher class="com.fr.plugin.lookandfeel.LookAndFeelSwitcher"/>
+        <JavaScriptFileHandler class="com.fr.plugin.lookandfeel.web.JavaScriptFile"/>
+        <CssFileHandler class="com.fr.plugin.lookandfeel.web.CssFile"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer>
+    </extra-designer>
+</plugin>

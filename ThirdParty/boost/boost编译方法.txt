@@ -1,0 +1,50 @@
+http://www.cnblogs.com/wondering/archive/2009/05/21/boost_setup.html
+
+b2.exe程序有很多的控制选项，如果不使用任何参数，默认生成的是“动态链接运行时、多线程（MD/MDd）”的静态库（lib），包含debug和release两个版本。
+生成的lib文件保存在<%boost库路径%\stage\lib>文件夹中
+
+32位dll（debug和release）
+启动vc2008命令行提示符
+.\b2 stage --toolset=msvc-9.0 link=shared runtime-link=shared threading=multi debug release
+
+64位dll（debug和release）
+启动vc2008的x64命令行提示符
+.\b2 --toolset=msvc-9.0 architecture=x86 address-model=64 link=shared runtime-link=shared threading=multi debug release
+
+
+32位lib（debug和release）
+启动vc2008命令行提示符
+\b2 stage --toolset=msvc-9.0
+
+64位lib（debug和release）
+启动vc2008的x64命令行提示符
+\b2 stage --toolset=msvc-9.0 architecture=x86 address-model=64
+
+
+五、使用
+
+使用举例：
+ 
+#include <boost\thread.hpp>
+ 
+此时，不用包含库文件，boost的auto-link机制将会自动帮我们包含对应的静态lib。也就是说，boost默认是以静态方式链接的，这样我们的工程属性最好也设为Multi-threaded (Debug)。如果想使用dll动态方式链接，需要预先定义宏：
+ 
+#define BOOST_ALL_DYN_LINK
+ 
+同样，此时boost也会默认帮我们包含对应的lib。如果不想使用boost提供的auto-link机制，或者对它的自动链接不太放心的话（其实大可不必担心），可以预先定义宏：
+ 
+#define BOOST_ALL_NO_LIB
+ 
+然后使用以下方法链接：
+ 
+#pragma comment(lib, "boost_thread-vc90-mt-1_47.lib")
+或
+#pragma comment(lib, "boost_thread-vc90-mt.lib")
+ 
+这两个lib其实是一样的，实在不明白boost编译时为什么每个库都要复制一份，难道是因为后者在升级boost版本后不用改代码？另外还有一个比较有用的宏：
+ 
+#define BOOST_LIB_DIAGNOSTIC
+ 
+它可以让VC在编译时的output窗口中输出程序具体链接了哪些boost库以及链接顺序。
+ 
+关于boost的auto-link机制，详细可以看看boost\config\auto_link.hpp里的代码，很容易可以读懂，并且值得我们学习。

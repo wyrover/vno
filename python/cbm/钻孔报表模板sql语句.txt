@@ -1,0 +1,4 @@
+给定一个design_technology的id就可以查询出关联的所有钻孔，这里用到多重join
+参考：http://www.5idev.com/p-php_mysql_join_multi_table.shtml
+
+select * from design_pore join design_site on design_site.id=design_pore.design_site_id join design_technology on design_technology.id=design_site.design_technology_id where design_technology.id=${design_id}

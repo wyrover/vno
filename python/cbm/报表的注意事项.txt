@@ -1,0 +1,26 @@
+-->finereport使用的时候必须要正确定义数据连接（connection），否则会出现连接错误
+
+所有的数据连接都定义在report\webapps\WebReport\WEB-INF\resources\datasource.xml
+
+注1：在设计器中定义的数据连接（“服务器”-->定义数据连接）会保存在设计器的安装路径下，而不是我们自己的报表路径下，切记
+注2：设计器安装路径下也有一个datasource.xml文件（WebReport\WEB-INF\resources\datasource.xml）
+注3：为了保证同步，建议从git更新后将report路径下的datasource.xml覆盖到设计器路径下的datasource.xml中，同样地，如果设计器中对数据连接有修改，也应该将设计器路径下的datasource.xml覆盖到report路径下的datasource.xml中
+
+
+-->目前有3个数据连接
+cbm                --  用于显示钻孔报表
+cbm_asset       --  用于显示示范矿区基础参数
+FRDemo          --  finereport自带的sqlite数据库
+
+-->编码修改
+报表的服务端、客户端、数据库都统一成utf-8编码
+1、设计器-->"服务器"-->平台管理-->系统管理，设置服务器端编码为utf-8
+注1：这样设置后，打开报表网页默认都是utf-8编码，否则默认就是gbk编码的
+注2：修改对应的配置文件WebReport\WEB-INF\resources\config.xml
+
+2、数据库的url统一成utf8
+设计器-->服务器-->数据连接，修改url的参数的问号部分
+?useUnicode=true&characterEncoding=GBK
+-->
+?useUnicode=true&characterEncoding=UTF-8
+

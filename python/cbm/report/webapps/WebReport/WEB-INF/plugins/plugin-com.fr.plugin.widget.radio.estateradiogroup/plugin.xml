@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.widget.radio.estateradiogroup</id>
+    <name><![CDATA[地产行业通用单选按钮组控件]]></name>
+    <active>yes</active>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-08-09</jartime>
+    <vendor>finereport.focus</vendor>
+    <description><![CDATA[地产行业通用的单选按钮组控件，显示的文本样式和选中样式可自定义，灵活方便，一劳永逸。具体请查看：http://bbs.finereport.com/thread-69126-1-2.html]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-report>
+        <JavaScriptFileHandler class="com.fr.plugin.widget.radio.JavaScriptFile"/>
+        <CssFileHandler class="com.fr.plugin.widget.radio.CssFile"/>
+    </extra-report>
+    <extra-designer>
+        <ParameterWidgetOptionProvider class="com.fr.plugin.widget.radio.EstateRadioGroupImpl"/>
+        <FormWidgetOptionProvider class="com.fr.plugin.widget.radio.EstateRadioGroupImpl"/>
+    </extra-designer>
+</plugin>

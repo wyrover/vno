@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><plugin>
+    <id>com.fr.plugin.sap</id>
+    <name><![CDATA[SAP数据集]]></name>
+    <active>yes</active>
+    <version>1.2</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-10-19</jartime>
+    <vendor>finereport</vendor>
+    <description><![CDATA[可以从SAP中取数和同步SAP数据至指定的数据库]]></description>
+    <change-notes><![CDATA[支持定时任务,<br />
+    [10-27更新]sapjco3.dll可正确移动到jre/bin目录下,<br />
+    [10-28更新]修复sap数据集同步定时用不了的问题,<br />]]></change-notes>
+    <extra-core>
+        <TableObject class="com.fr.schedule.tables.FR_SAP_SYN_TASK"/>
+        <ObjectTableMapper class="com.fr.schedule.task.SAPObjectTableMapper"/>
+        <WebService class="com.fr.schedule.web.ScheduleForSAPService"/>
+        <WebService class="com.fr.schedule.web.SAPTransferTimerService"/>
+        <XMLFileManagerProvider class="com.fr.data.impl.sap.SAPTransferManager"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer>
+        <TableDataDefineProvider class="com.fr.design.plugin.sap.SAPTableDataDefineImpl"/>
+        <ServerTableDataDefineProvider class="com.fr.design.plugin.sap.ServerSAPTableDataDefineImpl"/>
+        <ConnectionProvider class="com.fr.design.plugin.sap.SAPConnectionImpl"/>
+        <MenuHandler class="com.fr.design.plugin.sap.SAPMenuHandler"/>
+    </extra-designer>
+    <move-after-install>
+        <File name="sapjco3.dll" dir="../../jre/bin"/>
+    </move-after-install>
+</plugin>

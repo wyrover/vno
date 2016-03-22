@@ -1,0 +1,27 @@
+boost 1.58
+
+lemon-1.3.1
+
+log4cplus-1.2.0
+
+cruise_log4cplus（对应log4cplus的封装，计划用easyloggingpp替换它）
+
+easyloggingpp-8.9（9.0+版本需要c++ 11的支持）
+
+libcurl-7.3.9
+
+soui-1.0
+
+jsoncpp-0.6
+
+utf8cpp
+
+下面的这几个库都是数据库相关的
+mysql-connector-c（mysql的c语言接口）
+sqlite3
+
+soci-3.2.3
+stactiverecord-0.1
+storm-0.1
+
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<plugin>
+    <id>com.fr.plugin.logdbconnection</id>
+    <name><![CDATA[自定义logdb的数据连接]]></name>
+    <active>no</active>
+    <hidden>no</hidden>
+    <version>1.0</version>
+    <env-version>8.0</env-version>
+    <jartime>2015-08-09</jartime>
+    <vendor>finereport</vendor>
+    <description><![CDATA[通过配置logdb.xml来自由定制logdb的数据连接。具体请查看：http://bbs.finereport.com/thread-69989-1-1.html]]></description>
+    <change-notes><![CDATA[无]]></change-notes>
+    <extra-core>
+        <XMLFileManagerProvider class="com.fr.plugin.logdb.LogDBXMLFileManager"/>
+        <LogDBRecordProcessor class="com.fr.plugin.logdb.RealLogDB"/>
+    </extra-core>
+    <extra-report/>
+    <extra-designer/>
+</plugin>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource>
+  <uidef>
+    <file name="init" path="xml\init.xml"/>
+  </uidef>
+  <layout>
+    <file name="cbm" path="xml\cbm.xml"/>
+  </layout>
+  <icon>
+  <file name="ICON_CBM_SOUI" path="image\cbm\cbm.ico"/>
+  </icon>
+  <cursor>
+  </cursor>
+  <img>
+    <file name="CBM_BG" path="image\cbm\bg.png"/>
+    <file name="CBM_SKIN_LOGO" path="image\cbm\skin_logo.png"/>
+    <file name="CBM_SKIN_BTN_CAD" path="image\cbm\skin_btn_cad.png"/>
+    <file name="CBM_SKIN_BTN_CAD_FILE" path="image\cbm\skin_btn_cad_file.png"/>
+    <file name="CBM_SYS_BTN_CLOSE" path="image\cbm\sys_btn_close.png"/>
+    <file name="CBM_SYS_BTN_MIN" path="image\cbm\sys_btn_min.png"/>
+  </img>
+</resource>

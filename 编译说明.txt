@@ -1,0 +1,9 @@
+1、这个项目vno是从cbm项目复制过来的，将thirdparty里的第3方库进行了一些删减，所以thirdparty里的lib和dll可以直接从cbm复制过来覆盖即可
+
+2、新增MFC dll项目PyArx，该项目依赖于ArxHelper，Python、Boost.Python这3个库，用来实现一个包含arx功能的python扩展模块
+
+3、VVLoader项目依赖于Python和Boost.Python，并做了一个简单命令test_python，嵌入Python解释器，执行外部的py文件(simple.py)
+
+4、在PyArx文件夹中编写了一个code_gen.py文件，生成chg_py.cpp文件，和chg.cpp一起编译，得到PyArx.pyd模块（修改PyArx项目的属性，将输出文件改名为PyArx.pyd）
+
+5、目前只编译了x64 debug版本的代码，将simple.py复制到vno/x64/debug下
